@@ -35,8 +35,8 @@ describe('chai-quantifiers', () => {
   it('containAll should be true if all items are true', () => {
     expect([0, 1, 2, 3]).to.containAll(item => item < 4);
   });
-  it('containOne should be true if one item is true', () => {
-    expect([0, 1, 2, 3]).to.containOne(item => item === 2);
+  it('containOne should be true if one or more items are true', () => {
+    expect([0, 1, 2, 3]).to.containOne(item => item >= 2);
   });
   it('containExactlyOne should be true if exactly one item is true', () => {
     expect([0, 1, 2, 3]).to.containExactlyOne(item => item === 2);
