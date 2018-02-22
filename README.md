@@ -1,6 +1,6 @@
 # chai-quantifiers
 
-Array quantifier assertions for [Chai](https://www.npmjs.com/package/chai).
+Array quantifier assertions for [Chai](http://chaijs.com/) assertion library.
 
 [![Build Status](https://travis-ci.org/frankthelen/chai-quantifiers.svg?branch=master)](https://travis-ci.org/frankthelen/chai-quantifiers)
 [![Coverage Status](https://coveralls.io/repos/github/frankthelen/chai-quantifiers/badge.svg?branch=master)](https://coveralls.io/github/frankthelen/chai-quantifiers?branch=master)
@@ -24,12 +24,14 @@ There are three assertions available, applicable to arrays.
  * containOne -- Asserts that one or more array items are true in respect to a predicate.
  * containExactlyOne -- Asserts that exactly one array item is true in respect to a predicate.
 
-A few examples:
+A quick example:
 ```javascript
 const chai = require('chai');
 const chaiQuantifiers = require('chai-quantifiers');
 
 chai.use(chaiQuantifiers);
+
+const { expect } = chai;
 
 describe('chai-quantifiers', () => {
   it('containAll should be true if all items are true', () => {

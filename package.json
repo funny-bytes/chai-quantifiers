@@ -1,7 +1,7 @@
 {
   "name": "chai-quantifiers",
   "version": "1.0.0-alpha.2",
-  "description": "Array quantifier assertions for chai",
+  "description": "Array quantifier assertions for chai assertion library",
   "main": "src/chai-quantifiers.js",
   "repository": {
     "type": "git",
@@ -9,9 +9,10 @@
   },
   "keywords": [
     "chai",
-    "assertion",
+    "assertions",
     "chai-plugin",
-    "quantifiers"
+    "quantifiers",
+    "array"
   ],
   "author": "Frank Thelen>",
   "license": "MIT",
@@ -31,7 +32,6 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
-    "chai-as-promised": "^7.1.1",
     "coveralls": "^3.0.0",
     "eslint": "^4.18.0",
     "eslint-config-airbnb-base": "^12.1.0",

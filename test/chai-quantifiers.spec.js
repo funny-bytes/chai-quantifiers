@@ -1,8 +1,6 @@
 const chai = require('chai');
-const chaiAsPromised = require('chai-as-promised');
 const chaiQuantifiers = require('..');
 
-chai.use(chaiAsPromised);
 chai.use(chaiQuantifiers);
 
 const { expect } = chai;
