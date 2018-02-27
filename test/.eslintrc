@@ -6,8 +6,7 @@
   "globals" : {
     "assert": false,
     "expect": false,
-    "should": false,
-    "sinon": false
+    "should": false
   },
   "plugins": [
     "should-promised"

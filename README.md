@@ -21,7 +21,7 @@ npm install --save-dev chai chai-quantifiers
 
 There are three assertions available, applicable to arrays.
  * containAll -- Asserts that all array items are true in respect to a predicate.
- * containOne -- Asserts that one or more array items are true in respect to a predicate.
+ * containOne -- Asserts that at least one array item is true in respect to a predicate.
  * containExactlyOne -- Asserts that exactly one array item is true in respect to a predicate.
 
 A quick example:
@@ -37,7 +37,7 @@ describe('chai-quantifiers', () => {
   it('containAll should be true if all items are true', () => {
     expect([0, 1, 2, 3]).to.containAll(item => item < 4);
   });
-  it('containOne should be true if one or more items are true', () => {
+  it('containOne should be true if at least one item is true', () => {
     expect([0, 1, 2, 3]).to.containOne(item => item >= 2);
   });
   it('containExactlyOne should be true if exactly one item is true', () => {
