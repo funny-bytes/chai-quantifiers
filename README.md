@@ -6,7 +6,7 @@ Array quantifier assertions for [Chai](http://chaijs.com/) assertion library.
 [![Coverage Status](https://coveralls.io/repos/github/frankthelen/chai-quantifiers/badge.svg?branch=master)](https://coveralls.io/github/frankthelen/chai-quantifiers?branch=master)
 [![Dependency Status](https://gemnasium.com/badges/github.com/frankthelen/chai-quantifiers.svg)](https://gemnasium.com/github.com/frankthelen/chai-quantifiers)
 [![Greenkeeper badge](https://badges.greenkeeper.io/frankthelen/chai-quantifiers.svg)](https://greenkeeper.io/)
-[![Maintainability](https://api.codeclimate.com/v1/badges/2b21f79b2657870c146f/maintainability)](https://codeclimate.com/github/frankthelen/chai-quantifiers/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/44fb4c780c3f36b0d04f/maintainability)](https://codeclimate.com/github/frankthelen/chai-quantifiers/maintainability)
 [![node](https://img.shields.io/node/v/chai-quantifiers.svg)]()
 [![code style](https://img.shields.io/badge/code_style-airbnb-brightgreen.svg)](https://github.com/airbnb/javascript)
 [![License Status](http://img.shields.io/npm/l/chai-quantifiers.svg)]()

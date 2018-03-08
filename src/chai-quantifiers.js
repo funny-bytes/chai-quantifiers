@@ -21,8 +21,8 @@ const plugin = (chai) => {
     const { t } = evaluate(array, predicate);
     this.assert(
       t.length >= 1,
-      'expected array to contain one or more items to be true, but all items are false',
-      `expected array not to contain one or more items to be true, but items at indexes [${t}] are true`
+      'expected array to contain at least one item to be true, but all items are false',
+      `expected array not to contain at least one item to be true, but items at indexes [${t}] are true`
     );
   });
 
