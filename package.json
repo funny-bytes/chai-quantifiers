@@ -1,6 +1,6 @@
 {
   "name": "chai-quantifiers",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Array quantifier assertions for chai assertion library",
   "main": "src/chai-quantifiers.js",
   "repository": {
