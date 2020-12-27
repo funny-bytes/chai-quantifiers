@@ -4,16 +4,5 @@
   ],
   "plugins": [
     "promise"
-  ],
-  "rules": {
-    "no-multi-spaces": 0,
-    "comma-dangle": ["error", {
-      "arrays": "only-multiline",
-      "objects": "only-multiline",
-      "imports": "ignore",
-      "exports": "ignore",
-      "functions": "never"
-    }],
-    "function-paren-newline": ["error", "consistent"]
-  }
+  ]
 }

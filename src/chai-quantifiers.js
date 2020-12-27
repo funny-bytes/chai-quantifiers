@@ -3,7 +3,7 @@ const evaluate = (array, predicate) => array.reduce(
     predicate(item)
       ? { t: [...acc.t, i], f: acc.f }
       : { t: acc.t, f: [...acc.f, i] }
-  ), { t: [], f: [] }
+  ), { t: [], f: [] },
 );
 
 const plugin = (chai) => {
@@ -13,7 +13,7 @@ const plugin = (chai) => {
     this.assert(
       f.length === 0,
       `expected array to contain all items to be true, but items at indexes [${f}] are false`,
-      'expected array not to contain all items to be true, but all items are true'
+      'expected array not to contain all items to be true, but all items are true',
     );
   });
 
@@ -23,7 +23,7 @@ const plugin = (chai) => {
     this.assert(
       t.length >= 1,
       'expected array to contain at least one item to be true, but all items are false',
-      `expected array not to contain at least one item to be true, but items at indexes [${t}] are true`
+      `expected array not to contain at least one item to be true, but items at indexes [${t}] are true`,
     );
   });
 
@@ -33,7 +33,7 @@ const plugin = (chai) => {
     this.assert(
       t.length === 1,
       `expected array to exactly contain one item to be true, but items at indexes [${t}] are true`,
-      `expected array not to exactly contain one item to be true, but item at index [${t}] is true`
+      `expected array not to exactly contain one item to be true, but item at index [${t}] is true`,
     );
   });
 };
