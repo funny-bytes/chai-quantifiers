@@ -7,8 +7,5 @@
     "assert": false,
     "expect": false,
     "should": false
-  },
-  "plugins": [
-    "should-promised"
-  ]
+  }
 }

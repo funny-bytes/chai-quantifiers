@@ -5,7 +5,7 @@ chai.use(chaiQuantifiers);
 
 const { expect } = chai;
 
-describe('chai-quentifiers', () => {
+describe('chai-quantifiers', () => {
   describe('containAll', () => {
     it('should be true if all items are true', () => {
       expect([0, 1, 2, 3]).to.containAll((item) => item < 4);
