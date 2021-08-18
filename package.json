@@ -6,7 +6,7 @@
   "types": "src/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git://github.com/frankthelen/chai-quantifiers.git"
+    "url": "git://github.com/funny-bytes/chai-quantifiers"
   },
   "keywords": [
     "chai",
@@ -18,9 +18,9 @@
   "author": "Frank Thelen>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/frankthelen/chai-quantifiers/issues"
+    "url": "https://github.com/funny-bytes/chai-quantifiers/issues"
   },
-  "homepage": "https://github.com/frankthelen/chai-quantifiers#readme",
+  "homepage": "https://github.com/funny-bytes/chai-quantifiers#readme",
   "scripts": {
     "lint": "eslint . --ignore-path ./.eslintignore",
     "test": "npm run test:unit && npm run test:typescript",
