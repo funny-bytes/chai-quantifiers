@@ -31,12 +31,13 @@
     "preversion": "npm run lint && npm test"
   },
   "engines": {
-    "node": ">=10.x.x"
+    "node": ">=12.x.x"
   },
   "devDependencies": {
     "@types/chai": "^4.2.22",
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.11.6",
+    "ansi-regex": ">=5.0.1",
     "chai": "^4.3.4",
     "coveralls": "^3.1.1",
     "eslint": "^8.1.0",
