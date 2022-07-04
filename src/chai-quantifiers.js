@@ -1,10 +1,8 @@
-const evaluate = (array, predicate) => array.reduce(
-  (acc, item, i) => (
-    predicate(item)
-      ? { t: [...acc.t, i], f: acc.f }
-      : { t: acc.t, f: [...acc.f, i] }
-  ), { t: [], f: [] },
-);
+const evaluate = (array, predicate) => array.reduce((acc, item, i) => (
+  predicate(item)
+    ? { t: [...acc.t, i], f: acc.f }
+    : { t: acc.t, f: [...acc.f, i] }
+), { t: [], f: [] });
 
 const plugin = (chai) => {
   chai.Assertion.addMethod('containAll', function func(predicate) {
