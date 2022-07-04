@@ -3,20 +3,20 @@
 declare global {
   namespace Chai {
     interface Assertion extends LanguageChains, NumericComparison, TypeComparison {
-      containAll(predicate: Predicate): Assertion;
-      containOne(predicate: Predicate): Assertion;
-      containExactlyOne(predicate: Predicate): Assertion;
+      containAll<T = any>(predicate: Predicate<T>): Assertion;
+      containOne<T = any>(predicate: Predicate<T>): Assertion;
+      containExactlyOne<T = any>(predicate: Predicate<T>): Assertion;
     }
 
     interface Assert {
-      containAll(val: any[], predicate: Predicate, msg?: string): void;
-      containOne(val: any[], predicate: Predicate, msg?: string): void;
-      containExactlyOne(val: any[], predicate: Predicate, msg?: string): void;
+      containAll<T = any>(val: T[], predicate: Predicate<T>, msg?: string): void;
+      containOne<T = any>(val: T[], predicate: Predicate<T>, msg?: string): void;
+      containExactlyOne<T = any>(val: T[], predicate: Predicate<T>, msg?: string): void;
     }
   }
 }
 
-type Predicate = (item: any) => boolean;
+type Predicate = <T>(item: T) => boolean;
 
 declare const chaiQuantifiers: Chai.ChaiPlugin;
 export = chaiQuantifiers;
